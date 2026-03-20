@@ -55,7 +55,7 @@ export default function Hero() {
           {/* Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 mt-8 justify-center md:justify-start">
             <a
-              href="/Samuel-Seneni-Resume.pdf"
+              href="/SAMUEL SENENI FRONTEND RESUME.pdf"
               download
               className="bg-cyan-500 hover:bg-cyan-600 px-6 py-3 rounded-lg transition text-white font-medium text-center"
             >
@@ -73,7 +73,7 @@ export default function Hero() {
           {/* Social Icons */}
           <div className="flex gap-5 sm:gap-6 mt-10 text-xl text-gray-400 justify-center md:justify-start">
             <a
-              href="https://github.com/yourusername"
+              href="https://github.com/Samuel-seneni"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-cyan-400 transition"
@@ -83,7 +83,7 @@ export default function Hero() {
             </a>
 
             <a
-              href="https://linkedin.com/in/yourusername"
+              href="https://www.linkedin.com/in/samuel-seneni"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-cyan-400 transition"

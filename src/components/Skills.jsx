@@ -58,8 +58,8 @@ const skills = [
   
   // Backend
   { name: "Node.js", icon: "nodejs", level: 85, category: "backend" },
-  { name: "Java", icon: "java", level: 75, category: "backend" },
-  { name: "Python", icon: "python", level: 80, category: "backend" },
+  { name: "Java", icon: "java", level: 70, category: "backend" },
+  { name: "Python", icon: "python", level: 70, category: "backend" },
   
   // Database
   { name: "MongoDB", icon: "mongodb", level: 75, category: "database" },
@@ -104,7 +104,7 @@ const InfiniteScrollSkills = ({ skills }) => {
             <div className="w-16 h-16 rounded-full bg-gray-900 border-2 border-white/20 flex items-center justify-center shadow-lg hover:scale-110 transition-transform">
               <img src={iconImages[skill.icon]} alt={skill.name} className="w-8 h-8 object-contain" />
             </div>
-            <span className="text-xs sm:text-sm font-medium text-center">{skill.name}</span>
+            <span className="text-xs sm:text-sm font push-medium text-center">{skill.name}</span>
           </div>
         ))}
       </motion.div>

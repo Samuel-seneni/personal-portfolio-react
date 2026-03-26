@@ -26,7 +26,6 @@ const iconImages = {
   nextjs: nextjsIcon,
   nodejs: nodejsIcon,
   mongodb: mongodbIcon,
-  java: javaIcon,
   python: pythonIcon,
   git: gitIcon,
   github: githubIcon,

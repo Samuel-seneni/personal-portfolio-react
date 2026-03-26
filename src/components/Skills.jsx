@@ -10,8 +10,6 @@ import reactIcon from "../assets/icons/react.png";
 import nextjsIcon from "../assets/icons/nextjs.png";
 import nodejsIcon from "../assets/icons/nodejs.png";
 import mongodbIcon from "../assets/icons/mongodb.png";
-import javaIcon from "../assets/icons/java.png";
-import pythonIcon from "../assets/icons/python.png";
 import gitIcon from "../assets/icons/git.png";
 import githubIcon from "../assets/icons/github.png";
 import vscodeIcon from "../assets/icons/vscode.png";
@@ -33,8 +31,6 @@ const iconImages = {
   git: gitIcon,
   github: githubIcon,
   vscode: vscodeIcon,
-  sql: SQLIcon,
-  mysql: MySQLIcon
 };
 
 // Categories data
@@ -59,7 +55,7 @@ const skills = [
   // Backend
   { name: "Node.js", icon: "nodejs", level: 85, category: "backend" },
   { name: "Java", icon: "java", level: 75, category: "backend" },
-  { name: "Python", icon: "python", level: 80, category: "backend" },
+  { name: "Python", icon: "python", level: 70, category: "backend" },
   
   // Database
   { name: "MongoDB", icon: "mongodb", level: 75, category: "database" },

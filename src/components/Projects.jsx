@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 
 import collabImg from "../assets/collabboard.png";
-import rentalImg from "../assets/portfolio.png";
+import portfolioIMG from "../assets/portfolio.png";
 import studentImg from "../assets/studentlearning.png";
 
 /* Projects Data */
@@ -21,7 +21,7 @@ const projects = [
     title: "Samuel Seneni's Portfolio",
     description:
       "This porfolio describe what i have done as Frontend Engineer and i will updating other projects.",
-    image: rentalImg,
+    image: portfolioIMG,
     tech: ["React", "Node.js", "Tailwind CSS"],
     github: "https://github.com/Samuel-seneni/personal-portfolio-react",
     live: "https://personal-portfolio-react-gamma-amber.vercel.app/",

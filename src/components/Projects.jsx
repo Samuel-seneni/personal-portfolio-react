@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 
 import collabImg from "../assets/collabboard.png";
-import rentalImg from "../assets/rental.png";
+import rentalImg from "../assets/portfolio.png";
 import studentImg from "../assets/studentlearning.png";
 
 /* Projects Data */
@@ -18,13 +18,13 @@ const projects = [
   },
 
   {
-    title: "Rental Management System",
+    title: "Samuel Seneni's Portfolio",
     description:
-      "A system for managing rental properties, tenants, and payment tracking.",
+      "This porfolio describe what i have done as Frontend Engineer and i will updating other projects.",
     image: rentalImg,
-    tech: ["React", "Node.js", "MongoDB"],
-    github: "https://github.com/Samuel-seneni/Real-Estate-website",
-    live: "https://real-estate-website-two-lime.vercel.app/",
+    tech: ["React", "Node.js", "Tailwind CSS"],
+    github: "https://github.com/Samuel-seneni/personal-portfolio-react",
+    live: "https://personal-portfolio-react-gamma-amber.vercel.app/",
   },
 
   {

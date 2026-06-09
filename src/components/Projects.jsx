@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 
 import collabImg from "../assets/collabboard.png";
-import portfolioIMG from "../assets/portfolio.png";
+import littlespark from "../assets/littlespark.png";
 import studentImg from "../assets/studentlearning.png";
 import ictticketPNG from "../assets/ictticket.png";
 import realestatePNG from "../assets/Realsmart.png";
@@ -22,13 +22,13 @@ const projects = [
   },
   {
     id: 2,
-    title: "Portfolio Platform",
+    title: "LittleSpark Wellness Hub",
     description:
       "A modern developer portfolio showcasing projects, engineering skills, and product thinking.",
-    image: portfolioIMG,
+    image: littlespark,
     tech: ["React", "Node.js", "Tailwind CSS"],
-    github: "https://github.com/Samuel-seneni/personal-portfolio-react",
-    live: "https://personal-portfolio-react-gamma-amber.vercel.app/",
+    github: "https://github.com/Samuel-seneni/littlespark-wellness",
+    live: "https://littlespark-wellness.vercel.app/",
   },
   {
     id: 3,

@@ -88,7 +88,7 @@ export default function About() {
             <div className="bg-[#0f172a] p-6 rounded-xl border border-gray-700 hover:border-cyan-400 transition">
               <FaCalendarAlt className="text-cyan-400 text-xl mb-3" />
               <p className="text-gray-400 text-sm">Experience</p>
-              <h3 className="text-lg font-semibold mt-1">2+ Years</h3>
+              <h3 className="text-lg font-semibold mt-1">4+ Years</h3>
             </div>
 
             {/* Card 2 */}

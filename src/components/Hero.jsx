@@ -1,5 +1,10 @@
 import { motion } from "framer-motion";
-import { FaGithub, FaLinkedin, FaTwitter, FaEnvelope } from "react-icons/fa";
+import {
+  FaGithub,
+  FaLinkedin,
+  FaTwitter,
+  FaEnvelope,
+} from "react-icons/fa";
 import OrbitAnimation from "./OrbitAnimation";
 
 export default function Hero() {
@@ -7,77 +12,84 @@ export default function Hero() {
     hidden: { opacity: 0 },
     show: {
       opacity: 1,
-      transition: { staggerChildren: 0.2 },
+      transition: { staggerChildren: 0.15 },
     },
   };
 
-  const slideLeft = {
-    hidden: { x: -120, opacity: 0 },
-    show: { x: 0, opacity: 1, transition: { duration: 0.9 } },
+  const fadeUp = {
+    hidden: { y: 40, opacity: 0 },
+    show: { y: 0, opacity: 1, transition: { duration: 0.8 } },
   };
 
-  const slideRight = {
-    hidden: { x: 120, opacity: 0 },
+  const fadeRight = {
+    hidden: { x: 80, opacity: 0 },
     show: { x: 0, opacity: 1, transition: { duration: 0.9 } },
   };
 
   return (
-    <section className="relative min-h-screen flex items-center bg-gradient-to-r from-black via-[#020617] to-[#071a2f] text-white px-4 sm:px-6 md:px-8 overflow-hidden">
+    <section className="relative min-h-screen flex items-center bg-[#05070d] text-white overflow-hidden px-6">
+
+      {/* 🌌 Background Glow */}
+      <div className="absolute inset-0">
+        <div className="absolute top-[-120px] left-[-120px] w-[400px] h-[400px] bg-cyan-500/20 blur-[120px] rounded-full"></div>
+        <div className="absolute bottom-[-120px] right-[-120px] w-[400px] h-[400px] bg-blue-500/20 blur-[140px] rounded-full"></div>
+      </div>
+
       <motion.div
         variants={container}
         initial="hidden"
         animate="show"
-        className="max-w-7xl w-full mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-10 items-center z-10 py-16 sm:py-20"
+        className="relative max-w-7xl mx-auto w-full grid md:grid-cols-2 gap-14 items-center"
       >
-        {/* LEFT SIDE */}
-        <motion.div
-          variants={slideLeft}
-          className="text-center md:text-left order-2 md:order-1"
-        >
-          <span className="inline-block bg-cyan-500/20 text-cyan-400 px-4 py-2 rounded-full text-xs sm:text-sm">
-            Hi, I&apos;m Samuel Seneni
-          </span>
+        {/* LEFT CONTENT */}
+        <motion.div variants={fadeUp} className="text-center md:text-left">
 
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mt-6 leading-tight">
-            Front-end Developer
+          {/* Badge */}
+          <div className="inline-flex items-center px-5 py-2 rounded-full border border-cyan-500/30 bg-white/5 backdrop-blur-md text-cyan-300 text-xs tracking-widest uppercase">
+            Available for opportunities
+          </div>
+
+          {/* Title */}
+          <h1 className="mt-6 text-4xl md:text-6xl font-bold leading-tight">
+            Frontend Developer
+            <span className="block text-cyan-400">
+              & UI Engineer
+            </span>
           </h1>
 
-          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-cyan-400 mt-2 leading-tight">
-            & Designer
-          </h2>
-
-          <p className="text-gray-400 mt-6 max-w-xl mx-auto md:mx-0 text-sm sm:text-base leading-relaxed">
-            I am a Front-End Developer skilled in HTML, CSS, JavaScript, and
-            React, passionate about building responsive, user-friendly, and
-            high-performance web applications.
+          {/* Subtitle */}
+          <p className="mt-6 text-gray-400 max-w-xl text-sm md:text-base leading-relaxed">
+            I build modern, scalable, and high-performance web applications
+            using React, Tailwind, and modern JavaScript frameworks.
+            Focused on clean UI, UX, and real-world product thinking.
           </p>
 
-          {/* Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 mt-8 justify-center md:justify-start">
+          {/* CTA Buttons */}
+          <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+
             <a
               href="/SAMUEL SENENI FRONTEND RESUME.pdf"
               download
-              className="bg-cyan-500 hover:bg-cyan-600 px-6 py-3 rounded-lg transition text-white font-medium text-center"
+              className="px-6 py-3 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-500 hover:opacity-90 transition font-medium text-white shadow-lg shadow-cyan-500/20"
             >
               Download Resume
             </a>
 
             <a
               href="#projects"
-              className="border border-gray-600 px-6 py-3 rounded-lg hover:border-cyan-400 hover:text-cyan-400 transition text-center"
+              className="px-6 py-3 rounded-xl border border-white/10 bg-white/5 backdrop-blur-md hover:border-cyan-400 hover:text-cyan-300 transition"
             >
-              View Projects →
+              Explore Projects →
             </a>
           </div>
 
-          {/* Social Icons */}
-          <div className="flex gap-5 sm:gap-6 mt-10 text-xl text-gray-400 justify-center md:justify-start">
+          {/* Socials */}
+          <div className="mt-10 flex gap-5 justify-center md:justify-start text-xl text-gray-400">
+
             <a
               href="https://github.com/Samuel-seneni"
               target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-cyan-400 transition"
-              aria-label="GitHub"
+              className="hover:text-cyan-400 transition hover:scale-110"
             >
               <FaGithub />
             </a>
@@ -85,40 +97,43 @@ export default function Hero() {
             <a
               href="https://www.linkedin.com/in/samuel-seneni"
               target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-cyan-400 transition"
-              aria-label="LinkedIn"
+              className="hover:text-cyan-400 transition hover:scale-110"
             >
               <FaLinkedin />
             </a>
 
             <a
-              href="https://twitter.com/yourusername"
+              href="https://twitter.com/"
               target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-cyan-400 transition"
-              aria-label="Twitter"
+              className="hover:text-cyan-400 transition hover:scale-110"
             >
               <FaTwitter />
             </a>
 
             <a
               href="mailto:youremail@example.com"
-              className="hover:text-cyan-400 transition"
-              aria-label="Email"
+              className="hover:text-cyan-400 transition hover:scale-110"
             >
               <FaEnvelope />
             </a>
           </div>
         </motion.div>
 
-        {/* RIGHT SIDE */}
+        {/* RIGHT VISUAL */}
         <motion.div
-          variants={slideRight}
-          className="flex justify-center order-1 md:order-2"
+          variants={fadeRight}
+          className="flex justify-center relative"
         >
-          <div className="w-full max-w-[260px] sm:max-w-[320px] md:max-w-[380px] lg:max-w-[450px]">
-            <OrbitAnimation />
+          <div className="relative">
+
+            {/* Glow ring */}
+            <div className="absolute inset-0 blur-3xl bg-cyan-500/10 rounded-full scale-110"></div>
+
+            {/* Main animation container */}
+            <div className="relative z-10 w-[280px] sm:w-[340px] md:w-[420px]">
+              <OrbitAnimation />
+            </div>
+
           </div>
         </motion.div>
       </motion.div>
